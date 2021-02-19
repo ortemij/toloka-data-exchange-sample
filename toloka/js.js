@@ -49,10 +49,10 @@ exports.Assignment = extend(TolokaAssignment, function (options) {
         const outputKey = result.key;
 
         // Patch solutions and change the real results to the reference key
-        solutions = solutions.map(s => ({...s, output_values: { output_key: result.key }}))
+        solutions = solutions.map(s => ({...s, output_values: { output_key: result.key }}));
 
         // Validate by the specification
-        const errors = await Promise.resolve(this.getTaskSuite().validate(solutions))
+        const errors = await Promise.resolve(this.getTaskSuite().validate(solutions));
         if (!errors) {
             // If no errors, pass results further
             strategy.call(this, solutions);
