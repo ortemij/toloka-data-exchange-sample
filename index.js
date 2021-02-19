@@ -75,7 +75,7 @@ app.get('/data/:requestedKey', (req, res) => {
 
 // Setup CORS to be able send AJAX requests from toloker interface
 const corsOptions = {
-    origin: 'https://iframe-toloka.com'
+    origin: ['https://iframe-toloka.com', 'https://sandbox.iframe-toloka.com']
 }
 
 app.options('/result', cors(corsOptions))
