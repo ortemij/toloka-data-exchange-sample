@@ -21,6 +21,7 @@ const transferData = (key, res) => {
 }
 
 const app = express()
+app.use(express.json())
 
 // Endpoint for serving data upon request
 app.get('/data/:requestedKey', (req, res) => {
