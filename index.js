@@ -86,7 +86,7 @@ app.put('/result', cors(corsOptions), (req, res) => {
     const outputKey = crypto.randomBytes(3).toString('hex')
 
     // Log the key and the real result (here should be some persistence)
-    console.log(`Got for key=${outputKey} result: ${req.body}`)
+    console.log(`Got for key=${outputKey} result: ${JSON.stringify(req.body)}`)
 
     // Send the key for "stored" data back to Toloka
     res.send({
