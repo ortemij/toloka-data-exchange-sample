@@ -1,0 +1,7 @@
+{
+  "name": "Toloka Data Exchange Sample App",
+  "description": "A sample application to show how to exchange data with Toloka without storing it",
+  "repository": "https://github.com/ortemij/toloka-data-exchange-sample",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
+}
