@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000
 const TOLOKA_API_ENDPOINT = process.env.TOLOKA_API_ENDPOINT || 'https://sandbox.toloka.yandex.com/api/v1'
 const TOLOKA_API_TOKEN = process.env.TOLOKA_API_TOKEN
 
-// Helper function for transfering 
+// Helper function for transfering content
 const transferData = (key, res) => {
     var stream = fs.createReadStream(path.join(__dirname, 'data', `${key}.jpg`))
     res.contentType('image/jpeg')
